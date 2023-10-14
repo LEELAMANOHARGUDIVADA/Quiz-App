@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="btn">
+        <button id="startButton">Start</button>
+    </div>
+
+    <div class="rules-box" id="rulesBox">
+        <div class="rules-title">
+            <span>Rules of the Quiz</span>
+        </div>
+        <div class="rules-container">
+            <div class="rule"><span>➡ You will have only 20 seconds to answer the question</span></div>
+            <div class="rule"><span>➡ You must answer all the  questions</span></div>
+            <div class="rule"><span>➡ Answer once selected cannot be reselected</span></div>
+            <div class="rule">➡ You cannot exit from the game while playing</div>
+            <div class="rule">➡ You  will get one point for each correct answer</div>
+        </div>
+        <div class="buttons">
+            <button class="exit">Exit</button>
+            <button class="continue" id="continue-button">Continue</button>
+
+        </div>
+    </div>
+
+    <div class="quiz-box" id="quiz-box">
+        <header class="header">
+            <div class="header-title">
+                Quiz App
+            </div>
+            <div class="timer">
+                <div class="timer-title">Time Left</div>
+                <div class="time">20</div>
+            </div>
+            <div class="time-line"></div>
+        </header>
+
+        <section id="question">
+            <div class="question-header">
+                <!-- <span>What does CSS Stand for?</span> -->
+            </div>
+            <div class="options-list">
+                <!-- <div class="option">
+                    <span>Computer Style Sheet</span>
+                </div>
+                <div class="option">
+                    <span>Colorful Style Sheet</span>
+                    <div class="icon wrong"><i class="ri-close-line"></i></div>
+                </div>
+                <div class="option">
+                    <span>Cascading Style Sheet</span>
+                    <div class="icon right"><i class="ri-check-line"></i></div>
+                </div>
+                <div class="option">
+                    <span>Common Style Sheet</span>
+                </div> -->
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="series">
+                <!-- <span><p>2</p>Of<p>5</p>Questions</span> -->
+            </div>
+            <button class="next">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result-container">
+        <div class="icon">
+            <i class="ri-bear-smile-fill"></i>
+        </div>
+        <div class="complete">You have completed the Quiz!</div>
+        <div class="score">
+            <!-- <span>Sorry, you only scored <p>2</p> Out Of <p>5</p>Points</span> -->
+        </div>
+        <div class="button">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="questions.js"></script>
+</body>
+</html>
