@@ -21,14 +21,14 @@ continueButton.addEventListener("click", () => {
   quizBox.style.display = "block";
   showQuestions(0);
   quesCounter(1);
-  startTimer(20);
+  startTimer(15);
   startTimerLine(0);
 });
 
 let ques_count = 0;
 let ques_number = 1;
 let counter;
-let timeValue = 20;
+let timeValue = 15;
 let widthValue = 0;
 let userScore = 0;
 
